@@ -4,7 +4,6 @@ import com.inditex.core.platform.domain.gateway.IPriceRepository;
 import com.inditex.core.platform.domain.gateway.ISearchPrice;
 import com.inditex.core.platform.domain.model.PriceSearchResults;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +19,7 @@ public class SearchPrice implements ISearchPrice {
     @Override
     public PriceSearchResults execute(OffsetDateTime queryDateTime, Long productId, Long brandId) {
         var searchResults = priceRepository.searchByBrandIdAndProductIdAndQueryDateTime(queryDateTime, productId, brandId);
+        log.info("message {}", searchResults);
         return null;
     }
 

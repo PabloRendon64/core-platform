@@ -19,7 +19,7 @@ public class PriceDao implements IPriceRepository {
 
     @Override
     public List<Price> searchByBrandIdAndProductIdAndQueryDateTime(OffsetDateTime queryDateTime, Long productId, Long brandId) {
-        return mapper.toPrices(priceJpaRepository.findByBrandIdAndProductIdAndStartDateGreaterThanEqualAndEndDateLessThanEqual(brandId,
-                productId, queryDateTime, queryDateTime));
+        return mapper.toPrices(priceJpaRepository.findByBrandIdAndProductIdAndStartDateGreaterThanEqualAndEndDateLessThanEqual(
+                brandId, productId, queryDateTime, queryDateTime));
     }
 }
