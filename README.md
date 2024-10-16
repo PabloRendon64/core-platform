@@ -1,4 +1,4 @@
-# Pablo Rendon - Prueba técnica Inditex Core Platform
+# Pablo Rendon - Prueba técnica Core Platform
 ## Requerimientos ##
 
  - Java JDK 21
@@ -16,7 +16,7 @@ para ejecutar la app solo se debe iniciar el proyecto en la case principal `src/
 
 ## Documentación
 
-la documentacion usando swagger ui se puede encontrar en la siguiente ruta mientras le proyecto este corriendo
+la documentacion usando swagger ui se puede encontrar en la siguiente ruta mientras le proyecto este ejecutandose
 
 `http://localhost:8080/swagger-ui/index.html`
 
