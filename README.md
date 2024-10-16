@@ -16,7 +16,7 @@ para ejecutar la app solo se debe iniciar el proyecto en la case principal `src/
 
 ## Documentación
 
-swagger ui documentation 
+la documentacion usando swagger ui se puede encontrar en la siguiente ruta mientras le proyecto este corriendo
 
 `http://localhost:8080/swagger-ui/index.html`
 
