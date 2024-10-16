@@ -16,7 +16,7 @@ para ejecutar la app solo se debe iniciar el proyecto en la case principal `src/
 
 ## Documentación
 
-la documentacion usando swagger ui se puede encontrar en la siguiente ruta mientras le proyecto este ejecutandose
+la documentación usando swagger ui se puede encontrar en la siguiente ruta mientras el proyecto este ejecutandose
 
 `http://localhost:8080/swagger-ui/index.html`
 
@@ -28,8 +28,8 @@ algunos frameworks/mejores practicas usadas:
  - Domain-driven design (DDD) y se implementó arquitectura hexagonal
  - JPA
  - pruebas unitarias
- - jacoco reports para covertura de codigo
- - swagger para documentacion del codigo
+ - jacoco reports para covertura de código
+ - swagger para documentacion del código
 
 **NOTA:** el reporte de jacoco se puede encotrar en `/build/jacoco/test/html/index.html` depues de compilar el proyecto
 
