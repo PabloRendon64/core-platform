@@ -1,11 +1,13 @@
 package com.inditex.core.platform.domain.model;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.time.OffsetDateTime;
 
 @Data
-public class PriceSearchResults {
+@Accessors(chain = true)
+public class PriceSearchResult {
 
     private Long productId;
     private Long brandId;

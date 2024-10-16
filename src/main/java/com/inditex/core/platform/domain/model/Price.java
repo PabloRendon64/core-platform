@@ -1,16 +1,22 @@
 package com.inditex.core.platform.domain.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
-@Setter
-@Getter
+import java.time.OffsetDateTime;
+
+@Data
+@Accessors(chain = true)
 public class Price {
 
-    private String name;
-    private Double positionX;
-    private Double positionY;
-    private Double distance;
-    private String[] message;
+    private Long id;
+    private Long brandId;
+    private OffsetDateTime startDate;
+    private OffsetDateTime endDate;
+    private Long priceList;
+    private Long productId;
+    private Long priority;
+    private Double price;
+    private String currency;
 
 }

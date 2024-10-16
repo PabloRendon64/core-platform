@@ -60,14 +60,14 @@ jacocoTestReport {
 		classDirectories.setFrom(files(classDirectories.files.collect {
 			fileTree(dir: it, include: [
 					'com/inditex/core/platform/domain/usecase/**',
-					'com/inditex/core/platform/infrastructure/persistence/**',
+					'com/inditex/core/platform/infrastructure/persistence/dao/**',
 			])
 		}))
 	}
 }
 
 jacoco {
-	toolVersion = "0.8.8"
+	toolVersion = "0.8.12"
 	reportsDirectory = layout.buildDirectory.dir('jacoco')
 }
 
@@ -75,14 +75,17 @@ jacocoTestCoverageVerification {
 	violationRules {
 		rule {
 			limit {
-				minimum = 0.6
+				minimum = 1
 			}
 		}
 
 		rule {
 			enabled = false
 			element = 'CLASS'
-			includes = ['com.inditex.core.platform.domain.service.*']
+			includes = [
+					'com.inditex.core.platform.domain.usecase.*',
+					'com.inditex.core.platform.infrastructure.persistence.dao.*'
+			]
 		}
 	}
 }

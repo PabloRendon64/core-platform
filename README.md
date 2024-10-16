@@ -1,36 +1,38 @@
-# Pablo Rendon java with sprint framework project example
+# Pablo Rendon - Prueba técnica Inditex Core Platform
+## Requerimientos ##
 
-## Requirements ##
+ - Java JDK 21
+ - Gradle 8.10.2 o superior
 
- - Java JDK 17
- - Gradle 3.2.0 or higher
-
-## Compile
+## Compilar
 
 ```
 gradle clean build
 ```
 
-## Run app
+## Ejecutar la app
 
-to run server first set profile `dev` due is required to start h2 database
+para ejecutar la app solo se debe iniciar el proyecto en la case principal `src/main/java/com/inditex/core/platform/Application.java`
 
-## Documentation
+## Documentación
 
 swagger ui documentation 
 
 `http://localhost:8080/swagger-ui/index.html`
 
-## Further info
+## Información adicional
 
-Some frameworks/libs/best practices used:
+algunos frameworks/mejores practicas usadas:
 
  - spring boot
- - Domain-driven design (DDD) hexagonal architecture is implemented
+ - Domain-driven design (DDD) y se implementó arquitectura hexagonal
  - JPA
- - units tests
- - jacoco reports for code coverage
- - spring AOP (to run aspect oriented programing)
- - swagger for API documentation
+ - pruebas unitarias
+ - jacoco reports para covertura de codigo
+ - swagger para documentacion del codigo
 
-**NOTE:** jacoco report can be found in `/build/jacoco/test/html/index.html` after compile project
+**NOTA:** el reporte de jacoco se puede encotrar en `/build/jacoco/test/html/index.html` depues de compilar el proyecto
+
+## Casos de prueba solicitados
+
+los casos de prueba solicitados en la prueba se pueden encontrar en `src/test/java/com/inditex/core/platform/entrypoint/controller/PriceControllerIntegrationTest.java`
